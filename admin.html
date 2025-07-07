@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administrador - Porsche Concesionario</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="admin-container">
+        <header class="admin-header">
+            <div class="logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Porsche_logo.svg/2560px-Porsche_logo.svg.png" alt="Porsche Logo">
+            </div>
+            <h1>Panel de Administrador</h1>
+            <button id="logoutBtn" class="logout-btn">Cerrar Sesión</button>
+        </header>
+
+        <div class="admin-content">
+            <div class="stats-cards">
+                <div class="stat-card">
+                    <h3>Total Ventas</h3>
+                    <p id="totalSales">$0</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Autos Vendidos</h3>
+                    <p id="totalCars">0</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Clientes</h3>
+                    <p id="totalCustomers">0</p>
+                </div>
+            </div>
+
+            <div class="admin-sections">
+                <div class="section">
+                    <h2>Registro de Compras</h2>
+                    <div class="table-container">
+                        <table id="salesTable">
+                            <thead>
+                                <tr>
+                                    <th>Cliente</th>
+                                    <th>Auto</th>
+                                    <th>Precio</th>
+                                    <th>Fecha</th>
+                                    <th>Estado</th>
+                                </tr>
+                            </thead>
+                            <tbody id="salesTableBody">
+                                <!-- Los datos se cargarán dinámicamente -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2>Gestionar Inventario</h2>
+                    <div class="inventory-grid" id="inventoryGrid">
+                        <!-- Los autos se cargarán dinámicamente -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
